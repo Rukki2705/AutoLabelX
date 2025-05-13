@@ -24,26 +24,29 @@ AutoLabelX is a semi-automated pipeline for scalable and intelligent text data l
 ```
 AutoLabelX/
 │
-├── data/ # Raw, processed, and labeled datasets
-│ ├── raw/
-│ ├── processed/
-│ └── labeling_outputs/
+├── data/                         # Raw, processed, and labeled datasets
+│   ├── raw/
+│   ├── processed/
+│   └── labeling_outputs/
 │
-├── labeling/ # Snorkel labeling functions + label model
-│ ├── labeling_functions.py
-│ └── apply_label_model.py
+├── labeling/                    # Snorkel labeling functions + label model
+│   ├── labeling_functions.py
+│   └── apply_label_model.py
 │
-├── active_learning/ # Training and review loop
-│ ├── train_model.py
-│ ├── uncertainty_sampling.py
-│ ├── streamlit_dashboard.py
-│ └── label_store/
+├── active_learning/             # Training and review loop
+│   ├── train_model.py
+│   ├── uncertainty_sampling.py
+│   ├── streamlit_dashboard.py
+│   └── label_store/
 │
-├── models/ # Fine-tuned transformer models
+├── models/                      # Fine-tuned transformer models
 │
-├── scripts/ # Data preparation and preprocessing
-│ └── prepare_agnews.py
-│ └── preprocess_text.py
+├── scripts/                     # Data preparation and preprocessing
+│   ├── prepare_agnews.py
+│   └── preprocess_text.py
+│
+├── docker/                      # Docker deployment setup
+│   └── Dockerfile
 │
 ├── requirements.txt
 ```
