@@ -61,6 +61,29 @@ AutoLabelX/
 
 ---
 
+## 🧹 Preprocess Dataset
+```
+python scripts/prepare_agnews.py
+python scripts/preprocess_text.py
+```
+## 🧠 Label with Snorkel
+```
+python labeling/apply_label_model.py
+```
+
+## 🤖 Train Model
+```
+python active_learning/train_model.py
+```
+## 📉 Run Uncertainty Sampling
+```
+python active_learning/uncertainty_sampling.py
+```
+## 🙋 Launch Human Review UI
+```
+streamlit run active_learning/streamlit_dashboard.py
+```
+---
 ## 🧪 How It Works
 
 1. **Prepare Data**: Load and clean the AG News dataset (`scripts/prepare_agnews.py`)
