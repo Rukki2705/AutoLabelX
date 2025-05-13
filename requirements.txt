@@ -6,3 +6,4 @@ torch
 transformers 
 accelerate 
 streamlit 
+git+https://github.com/snorkel-team/snorkel.git
